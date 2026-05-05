@@ -27,8 +27,7 @@
         margin: 0;
         min-height: 100vh;
         font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: radial-gradient(circle at top, rgba(124, 58, 237, 0.18), transparent 28%),
-          linear-gradient(180deg, #08101f 0%, #02040c 100%);
+        background: #000;
         color: var(--text);
       }
 
@@ -55,6 +54,13 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: #fff;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        height: 40px;
+        margin-right: 0.5rem;
       }
 
       .nav {
@@ -261,14 +267,21 @@
         .stats {
           grid-template-columns: 1fr;
         }
+
+        .logo {
+          height: 30px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="page">
-      <div style="display: flex; align-items: center; justify-content: center; min-height: 80vh; font-size: 4rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #fff;">
-        Alternative Alphas
-      </div>
+      <header>
+        <div class="brand">
+          <img src="logo.jpg" alt="Alternative Alphas Logo" class="logo">
+          Alternative Alphas
+        </div>
+      </header>
     </div>
   </body>
 </html>
